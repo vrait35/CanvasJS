@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>canvasExample</title>
+        <meta charset='utf-8' />
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<canvas height='320' width='680' id='example'>Обновите браузер</canvas>
+		<script>
+		x1=50,x2=50,x3=300,x4=200;
+			c=document.getElementById("example");		
+			ctx=c.getContext('2d');
+			//ctx.fillStyle="red";
+			//ctx.fillRect(x1,x2,x3,x4);
+			ctx.beginPath();
+			ctx.moveTo(50,50);
+			
+			$("#example").click(function(event){
+				ctx.lineTo(event.clientX,event.clientY);
+				ctx.stroke();
+			});
+			</script>							
+	</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>canvasExample</title>
+        <meta charset='utf-8' />
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<canvas height='320' width='680' id='example'>Обновите браузер</canvas>
+		<script>
+		x1=50,x2=50,x3=300,x4=200;
+			c=document.getElementById("example");		
+			ctx=c.getContext('2d');
+		ctx.arc(200,150,80,(Math.PI/180)*0,(Math.PI/180)*360,true);
+		ctx.stroke();
+		ctx.arc(220,130,10,(Math.PI/180)*0,(Math.PI/180)*360,true);
+		ctx.stroke();
+		ctx.arc(170,130,10,(Math.PI/180)*0,(Math.PI/180)*360,true);
+		ctx.stroke();	
+		ctx.arc(195,170,10,(Math.PI/180)*0,(Math.PI/180)*360,true);
+		ctx.stroke();
+		ctx.beginPath();
+		ctx.moveTo(220,190);	
+		ctx.lineTo(170,190);
+		ctx.stroke();				
+			</script>							
+	</body>
+</html>
